@@ -1,0 +1,84 @@
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: 	#000000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+</style>
+<title>
+Wanderlust
+</title>
+</head>
+<body><font face="verdana">
+<p>
+<table width="100%" height="20%" color="black"><tr><td  width="60%" align="left"><h2><strong><a href="travel.html" ><img src="l.jpg" width="50%"></a></strong></h2></td>
+<td  align="right">Places
+</td>
+<td  align="right">About us</td>
+</tr>
+</table>
+</p>
+<div class="container">
+  <img src="travel.jpg"  class="image" >
+  <div class="overlay">
+    <div class="text">Cappadocia, Turkey</div>
+  </div>
+</div>
+<p><center><h1><tt>Recent articles</tt></h1></center>
+<table cell spacing="20%">
+<tr height="50%">
+<td width="50%"><div class="container">
+  <img src="sydney.jpg"  class="image" height="90%" >
+  <div class="overlay">
+    <div class="text">Sydney,Australia</div>
+  </div></td>
+<td width="50%" ><div class="container">
+  <img src="rome.jpeg"  class="image" height="130%" >
+  <div class="overlay">
+    <div class="text" color="white"><a href="rome.html" >Rome,Italy</a></div>
+  </div></td></tr>
+</table>
+
+</p>
+
+</body>
+</html>
